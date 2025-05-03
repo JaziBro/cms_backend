@@ -1,15 +1,13 @@
+// config/middlewares.ts
 export default [
   'strapi::logger',
   'strapi::errors',
   {
     name: 'strapi::cors',
     config: {
-      origin: [
-        'http://localhost:3000',
-        'https://nextjs-pamphlet-site-vumu.vercel.app/', // ⬅️ Replace with your real domain
-      ],
+      origin: ['https://nextjs-pamphlet-site-vumu.vercel.app'],
+      headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      headers: '*',
       credentials: true,
     },
   },
