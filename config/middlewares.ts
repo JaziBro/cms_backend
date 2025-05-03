@@ -10,7 +10,7 @@ export default [
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       credentials: true,
     },
-  }  
+  }, 
   'strapi::security',
   'strapi::poweredBy',
   'strapi::query',
