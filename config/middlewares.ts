@@ -5,12 +5,12 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['https://nextjs-pamphlet-site-vumu.vercel.app'],
+      origin: ['*'], // for now, to debug
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       credentials: true,
     },
-  },
+  }  
   'strapi::security',
   'strapi::poweredBy',
   'strapi::query',
