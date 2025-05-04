@@ -1,4 +1,3 @@
-// config/middlewares.ts
 export default [
   'strapi::logger',
   'strapi::errors',
@@ -17,5 +16,13 @@ export default [
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
-  'strapi::public',
+
+  // 🔥 Explicitly serve public folder (especially uploads)
+  {
+    name: 'strapi::public',
+    config: {
+      path: './public',
+      maxAge: 60000,
+    },
+  },
 ];
