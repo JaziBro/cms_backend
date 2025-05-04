@@ -73,6 +73,11 @@ export interface SharedComponent4 extends Struct.ComponentSchema {
     feature_3: Schema.Attribute.String;
     feature_4: Schema.Attribute.String;
     feature_5: Schema.Attribute.String;
+    image: Schema.Attribute.Media<
+      'images' | 'files' | 'videos' | 'audios',
+      true
+    >;
+    title: Schema.Attribute.String;
   };
 }
 
