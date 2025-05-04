@@ -8,7 +8,7 @@ export default [
       origin: ['*'], // for now, to debug
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
-      credentials: true,
+      credentials: false,
     },
   }, 
   'strapi::security',
