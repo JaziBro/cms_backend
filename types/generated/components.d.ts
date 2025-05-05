@@ -185,8 +185,7 @@ export interface SharedHero extends Struct.ComponentSchema {
   attributes: {
     hero_button: Schema.Attribute.String;
     hero_image: Schema.Attribute.Media<
-      'images' | 'files' | 'videos' | 'audios',
-      true
+      'images' | 'files' | 'videos' | 'audios'
     >;
     hero_subtitle: Schema.Attribute.String;
     hero_title: Schema.Attribute.String;

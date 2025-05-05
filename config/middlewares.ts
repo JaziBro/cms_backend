@@ -4,7 +4,7 @@ export default [
   {
     name: 'strapi::cors',
     config: {
-      origin: ['http://localhost:3000', 'https://nextjs-pamphlet-site-vumu.vercel.app/'], // for now, to debug
+      origin: ['http://localhost:3000', 'https://nextjs-pamphlet-site.vercel.app'], // for now, to debug
       headers: ['Content-Type', 'Authorization', 'Origin', 'Accept'],
       methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
       credentials: true,

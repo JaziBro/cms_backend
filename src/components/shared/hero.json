@@ -9,22 +9,21 @@
     "hero_title": {
       "type": "string"
     },
-    "hero_image": {
-      "type": "media",
-      "multiple": true,
-      "required": false,
-      "allowedTypes": [
-        "images",
-        "files",
-        "videos",
-        "audios"
-      ]
-    },
     "hero_button": {
       "type": "string"
     },
     "hero_subtitle": {
       "type": "string"
+    },
+    "hero_image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
     }
   }
 }
