@@ -29,7 +29,6 @@ export default [
   'strapi::body',
   'strapi::session',
   'strapi::favicon',
-
   // 🔥 Explicitly serve public folder (especially uploads)
   {
     name: 'strapi::public',
